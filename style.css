@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* HTML */
+html{
+    font-family: "Roboto Condensed",sans-serif; /* Third party font always comes in double quotes */
+}
+/* Header */
+header{
+    height: 5rem;
+}
+
+.titlebar{
+    height: 50%;
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menubar{
+    height: 50%;
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+
+.menu-items{
+    position: absolute;
+    top: 4px;
+    background-color: white;
+    width: 7rem;
+    display: none;
+}
+
+.menu-btn:hover{
+    background-color: lightblue;
+}
+
+.menu{
+    position: relative;
+} 
+
+.menu:hover .menu-items{
+    display: block;
+}
+
+li:hover{
+    background-color: lightgray;
+}
+
+.title-img{
+    height: 60%;
+    margin-left: 1rem;
+}
+
+.title{
+    font-size: 1rem;
+}
+
+li{
+    padding: 0.25rem;
+}
+
+.videoInput{
+    display: none;
+}
+
+/* Footer */
+
+footer{
+    height: 3rem;
+    margin-left: 0.5rem;
+    gap: 5rem;
+}
+
+.fa-solid{
+    padding: 0.3rem;   
+}
+
+.fa-solid:hover{
+    background-color: aqua;
+}
+
+/* Main */
+main{
+    background-color: black;
+    height: calc(100vh - 8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    height: 100%;
+}
+
+.toast{
+    color: white;
+    position: fixed;
+    top:99px;
+    right: 47px;
+    font-size: 2.5rem;
+    display: none;
+}
