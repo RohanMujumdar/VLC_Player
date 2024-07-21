@@ -174,6 +174,10 @@ const acceptInputHandler = (obj) => {
     videoElement.setAttribute("class","video");
     videoElement.controls="true";
     videoElement.play();
+    if(videoPlayer.hasChildNodes())
+    {
+        videoElement.innerHTML=' ';
+    }
     videoPlayer.appendChild(videoElement);
     // videoElement.addEventListener("loadedmetadata",functio(){
     //     //Your time will be here
