@@ -174,10 +174,12 @@ const acceptInputHandler = (obj) => {
     videoElement.setAttribute("class","video");
     videoElement.controls="true";
     videoElement.play();
-    if(videoPlayer.hasChildNodes())
-    {
-        videoElement.innerHTML=' ';
+    // check if there are any video already present
+    if (videoPlayer.children.length > 0) {
+        // if present -> remove it 
+        videoPlayer.removeChild(videoPlayer.children[0]);
     }
+    // now after the above check -> add the videoElement
     videoPlayer.appendChild(videoElement);
     // videoElement.addEventListener("loadedmetadata",functio(){
     //     //Your time will be here
